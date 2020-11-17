@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- Permet de définir le langage utilisé-->
+<html lang="fr">
+    <!-- Indique aux navigateur dans quelle langue est le site-->
+<head>
+    <!-- Tête du document, elle n'est pas visible sur le site -->
+    <meta charset="UTF-8">
+    <!-- C'est le type d'encodage des caractère (il en existe plusieurs)-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Indique au navigateur que la largeur de la page fait la largeur de l'écran et qu'il n'y a aucun zoom-->
+
+    <meta name="description" content="Les textes en HTML">
+    <!-- Description sous le titre dans la recherche google => référencement -->
+
+    <title>Ma page textes</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- Lien vers le CDN en ligne de Fontawesome-->
+
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald" rel="stylesheet">
+    <!-- Lien vers les polices googleFont-->
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Lien vers notre feuille de style-->
+</head>
+<body>
+    <!-- Corps du document -->
+
+    <header>
+        <!--Zone du haut, ex: bannières, slogan, logo ... -->
+        <div id="logo">
+            <a href="#logo">
+                <button type="button">
+                    <i class="fas fa-arrow-circle-up"></i>
+                </button>
+            </a>
+            <img src="img/logo.png" alt="logo HTML CSS">
+        </div>
+
+        <div id="slogan">
+            <h1>Mon premier site en HTML/CSS</h1>
+        </div>
+
+        <div id="social">
+            <a href="http://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="http://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>
+
+        <div class="clear"></div>
+    </header>
+
+    <nav>
+        <!-- Zone de menu, les liens pour naviguer sur le site -->
+        <div class="ancreNav">
+            <a href="index.html">Structure</a>
+            <a href="textes.html" class="activ">Textes</a>
+            <a href="selecteurs.html">Selecteurs</a>
+            <a href="images.html">Images</a>
+            <a href="positions.html">Positions</a>
+            <a href="zoning.html">Zoning</a>
+            <a href="tableaux.html">Tableaux</a>
+            <a href="listes.html">Listes</a>
+            <a href="liens_menu.html">Liens & menu</a>
+            <a href="formulaires.html">Formulaires</a>
+            <a href="multimedias.html">Multimedias</a>
+            <a href="animations.html">Animations</a>
+        </div>
+    </nav>
+
+    <main>
+        <h2>Les textes</h2>
+        <section>
+            <h3>Titre de la première section</h3>
+            <blockquote>
+                <i class="fas fa-quote-left"></i>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis beatae asperiores expedita provident nemo? Eum?
+                <i class="fas fa-quote-right"></i>
+            </blockquote>
+
+            <p>
+                <strong>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo id quas culpa veritatis ipsum, quaerat quod tempora vel facere, esse deserunt quis pariatur. Eaque, ut iure? Recusandae neque quis minima fugiat amet optio non quasi reprehenderit animi vero nisi sed exercitationem quaerat quibusdam maxime itaque explicabo similique pariatur, cum blanditiis?
+                </strong>
+            </p>
+        </section>
+
+        <section class="oswald">
+            <h3>Titre de la section n°2</h3>
+
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta natus aperiam quas! Voluptatem corporis similique eaque. Distinctio eveniet magni rem quis! Atque minima quisquam, numquam quo reiciendis labore. Esse laboriosam quisquam aspernatur commodi perspiciatis velit provident quaerat obcaecati facere doloremque dolor sapiente libero iure, saepe quasi cumque dignissimos molestiae, quod impedit. Beatae optio iste blanditiis excepturi at, nostrum maxime placeat?
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <small>
+            &copy; 2020 Le PoleS
+        </small>
+    </footer>
+</body>
+</html>
