@@ -11,10 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Indique au navigateur que la largeur de la page fait la largeur de l'écran et qu'il n'y a aucun zoom-->
 
-    <meta name="description" content="Structure type du site, page d'accueil">
+    <meta name="description" content="Les images en HTML CSS">
     <!-- Description sous le titre dans la recherche google => référencement -->
 
-    <title>Ma page structure</title>
+    <title>Ma page images</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <!-- Lien vers le CDN en ligne de Fontawesome-->
@@ -59,10 +59,10 @@
     <nav>
         <!-- Zone de menu, les liens pour naviguer sur le site -->
         <div class="ancreNav">
-            <a href="index.html" class="activ">Structure</a>
+            <a href="index.html">Structure</a>
             <a href="textes.html">Textes</a>
             <a href="selecteurs.html">Selecteurs</a>
-            <a href="images.html">Images</a>
+            <a href="images.html" class="activ">Images</a>
             <a href="positions.html">Positions</a>
             <a href="zoning.html">Zoning</a>
             <a href="tableaux.html">Tableaux</a>
@@ -75,22 +75,36 @@
     </nav>
 
     <main>
-        <!-- Contenu principal -->
-        <aside>
-            <!-- Contenu secondaire -->
-        </aside>
+        <h2>Images</h2>
+
+        <section class="imageFond">
+            <h3>Images de fond en CSS</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit necessitatibus libero fugiat vero
+                laudantium reiciendis error expedita eum, ab nobis repudiandae animi unde sapiente accusamus, quam
+                quibusdam ducimus similique minus distinctio doloremque aliquid aliquam quasi. Beatae ipsam nemo impedit
+                magni ipsum qui laborum nesciunt quo error? Eum, eveniet ipsa laboriosam dolores enim id. Sit,
+                repudiandae. Quaerat veritatis nobis eveniet? Quod.
+            </p>
+        </section>
 
         <section>
-            <div>
-                <!-- Zone supplémentaire de contenu -->
-            </div>
+            <h3>Image dans HTML</h3>
 
-            <span>
-                <!-- Zone supplémentaire de contenu --> </span>
+            <figure>
+                <img src="img/toureiffel.jpg" alt="Cette photo montre la tour Eiffel de Paris">
 
-            <article>
-                <!-- Zone supplémentaire de contenu -->
-            </article>
+                <figcaption>Une photo de la tour Eiffel</figcaption>
+            </figure>
+
+        </section>
+
+        <section class="rotationImg">
+            <h3>Image en HTML / CSS</h3>
+
+            <img src="img/image.jpg" alt="une image pour l'exemple" class="image">
+            <img src="img/image.jpg" alt="une image pour l'exemple" class="image">
+            <img src="img/image.jpg" alt="une image pour l'exemple" class="rotation360 image">
         </section>
     </main>
 

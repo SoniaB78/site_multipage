@@ -11,10 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Indique au navigateur que la largeur de la page fait la largeur de l'écran et qu'il n'y a aucun zoom-->
 
-    <meta name="description" content="Structure type du site, page d'accueil">
+    <meta name="description" content="Les tableaux en HTML CSS">
     <!-- Description sous le titre dans la recherche google => référencement -->
 
-    <title>Ma page structure</title>
+    <title>Ma page tableaux</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <!-- Lien vers le CDN en ligne de Fontawesome-->
@@ -59,13 +59,13 @@
     <nav>
         <!-- Zone de menu, les liens pour naviguer sur le site -->
         <div class="ancreNav">
-            <a href="index.html" class="activ">Structure</a>
+            <a href="index.html">Structure</a>
             <a href="textes.html">Textes</a>
             <a href="selecteurs.html">Selecteurs</a>
             <a href="images.html">Images</a>
             <a href="positions.html">Positions</a>
             <a href="zoning.html">Zoning</a>
-            <a href="tableaux.html">Tableaux</a>
+            <a href="tableaux.html" class="activ">Tableaux</a>
             <a href="listes.html">Listes</a>
             <a href="liens_menu.html">Liens & menu</a>
             <a href="formulaires.html">Formulaires</a>
@@ -75,23 +75,56 @@
     </nav>
 
     <main>
-        <!-- Contenu principal -->
-        <aside>
-            <!-- Contenu secondaire -->
-        </aside>
+        <h2>Tableaux</h2>
 
-        <section>
-            <div>
-                <!-- Zone supplémentaire de contenu -->
-            </div>
+        <table class="tableau">
+            <caption>Vols Paris Rome <i class="fas fa-plane-departure"></i></caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <td>02/08/2021</td>
+                    <td>03/08/2021</td>
+                    <td>04/08/2021</td>
+                </tr>
+            </thead>
 
-            <span>
-                <!-- Zone supplémentaire de contenu --> </span>
+            <tfoot>
+                <tr>
+                    <th></th>
+                    <td>02/08/2021</td>
+                    <td>03/08/2021</td>
+                    <td>04/08/2021</td>
+                </tr>
+            </tfoot>
 
-            <article>
-                <!-- Zone supplémentaire de contenu -->
-            </article>
-        </section>
+            <tbody>
+                <tr>
+                    <th rowspan="2">Air France</th>
+                    <td>Départ 10h - Arrivée 13h</td>
+                    <td>Départ 15h - Arrivée 18h</td>
+                    <td>Départ 17h - Arrivée 20h</td>
+                </tr>
+
+                <tr>
+                    <td>200€</td>
+                    <td>180€</td>
+                    <td>170€</td>
+                </tr>
+
+                <tr>
+                    <th rowspan="2">Alitalia</th>
+                    <td>Départ 6h - Arrivée 9h</td>
+                    <td>Départ 13h - Arrivée 16h</td>
+                    <td>Départ 21h - Arrivée 00h</td>
+                </tr>
+
+                <tr>
+                    <td>120€</td>
+                    <td>250€</td>
+                    <td>100€</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
 
     <footer>

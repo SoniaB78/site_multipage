@@ -11,10 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Indique au navigateur que la largeur de la page fait la largeur de l'écran et qu'il n'y a aucun zoom-->
 
-    <meta name="description" content="Structure type du site, page d'accueil">
+    <meta name="description" content="Les différents types de position.">
     <!-- Description sous le titre dans la recherche google => référencement -->
 
-    <title>Ma page structure</title>
+    <title>Ma page position</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <!-- Lien vers le CDN en ligne de Fontawesome-->
@@ -59,11 +59,11 @@
     <nav>
         <!-- Zone de menu, les liens pour naviguer sur le site -->
         <div class="ancreNav">
-            <a href="index.html" class="activ">Structure</a>
+            <a href="index.html">Structure</a>
             <a href="textes.html">Textes</a>
             <a href="selecteurs.html">Selecteurs</a>
             <a href="images.html">Images</a>
-            <a href="positions.html">Positions</a>
+            <a href="positions.html" class="activ">Positions</a>
             <a href="zoning.html">Zoning</a>
             <a href="tableaux.html">Tableaux</a>
             <a href="listes.html">Listes</a>
@@ -75,21 +75,78 @@
     </nav>
 
     <main>
-        <!-- Contenu principal -->
-        <aside>
-            <!-- Contenu secondaire -->
-        </aside>
+        <h2>Positions</h2>
 
         <section>
-            <div>
-                <!-- Zone supplémentaire de contenu -->
+            <h3>Centrer un élément de type block</h3>
+            <div class="centre"></div>
+        </section>
+
+        <section>
+            <h3>Position Absolute</h3>
+            <p>Carré JAUNE ! Regarde en haut !</p>
+            <div class="absolute"></div>
+        </section>
+
+        <section>
+            <h3>Poisition Relative</h3>
+
+            <div class="relative">
+                <div></div>
             </div>
+        </section>
 
-            <span>
-                <!-- Zone supplémentaire de contenu --> </span>
+        <section>
+            <h3>Position Fixed</h3>
+            <p>Bouton retour en haut de la page</p>
 
-            <article>
-                <!-- Zone supplémentaire de contenu -->
+            <button type="button">
+                <i class="fas fa-arrow-circle-up"></i>
+            </button>
+        </section>
+
+        <section>
+            <h3>Le pourcentage</h3>
+
+            <div class="trente">30%</div>
+            <div class="cinquante">50%</div>
+            <div class="cent">100%</div>
+        </section>
+
+        <section>
+            <h3>L'attribut Float</h3>
+
+            <div class="float">1</div>
+            <div class="float">2</div>
+            <div class="float">3</div>
+            <div class="float">4</div>
+            <div class="float clear">5</div>
+            <div class="float">6</div>
+            <div class="float">7</div>
+            <div class="float clear">8</div>
+            <div class="float">9</div>
+            <div class="dernier clear">10</div>
+        </section>
+
+        <section>
+            <h3>Exercice sur le Float</h3>
+
+            <div class="zone"></div>
+            <div class="zone1"></div>
+            <div class="zone2"></div>
+            <div class="zone3"></div>
+            <div class="zone4"></div>
+            <div class="zone clear"></div>
+        </section>
+
+        <section>
+            <h3>Flexbox</h3>
+
+            <article class="flex">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
             </article>
         </section>
     </main>
