@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!-- Permet de définir le langage utilisé-->
+<html lang="fr">
+<!-- Indique aux navigateur dans quelle langue est le site-->
+
+<head>
+    <!-- Tête du document, elle n'est pas visible sur le site -->
+    <meta charset="UTF-8">
+    <!-- C'est le type d'encodage des caractère (il en existe plusieurs)-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Indique au navigateur que la largeur de la page fait la largeur de l'écran et qu'il n'y a aucun zoom-->
+
+    <meta name="description" content="Le zoning en HTML / CSS">
+    <!-- Description sous le titre dans la recherche google => référencement -->
+
+    <title>Ma page Zoning</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- Lien vers le CDN en ligne de Fontawesome-->
+
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald" rel="stylesheet">
+    <!-- Lien vers les polices googleFont-->
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Lien vers notre feuille de style-->
+</head>
+
+<body>
+    <!-- Corps du document -->
+
+    <header>
+        <!--Zone du haut, ex: bannières, slogan, logo ... -->
+        <div id="logo">
+            <a href="#logo">
+                <button type="button">
+                    <i class="fas fa-arrow-circle-up"></i>
+                </button>
+            </a>
+            <img src="img/logo.png" alt="logo HTML CSS">
+        </div>
+
+        <div id="slogan">
+            <h1>Mon premier site en HTML/CSS</h1>
+        </div>
+
+        <div id="social">
+            <a href="http://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="http://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>
+
+        <div class="clear"></div>
+    </header>
+
+    <nav>
+        <!-- Zone de menu, les liens pour naviguer sur le site -->
+        <div class="ancreNav">
+            <a href="index.html">Structure</a>
+            <a href="textes.html">Textes</a>
+            <a href="selecteurs.html">Selecteurs</a>
+            <a href="images.html">Images</a>
+            <a href="positions.html">Positions</a>
+            <a href="zoning.html" class="activ">Zoning</a>
+            <a href="tableaux.html">Tableaux</a>
+            <a href="listes.html">Listes</a>
+            <a href="liens_menu.html">Liens & menu</a>
+            <a href="formulaires.html">Formulaires</a>
+            <a href="multimedias.html">Multimedias</a>
+            <a href="animations.html">Animations</a>
+        </div>
+    </nav>
+
+    <main>
+        <h2>Le Zoning</h2>
+
+        <section>
+            <h3>Zoning 1</h3>
+
+            <div id="zoning1">
+                <header>
+                    <p>Zone du haut</p>
+                </header>
+
+                <aside>
+                    zone de gauche
+                </aside>
+
+                <section>
+                    Zone de droite
+                </section>
+
+                <div class="clear"></div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Zoning 2</h3>
+
+            <div id="zoning2">
+                <header>
+                    <p>Zone du haut</p>
+                </header>
+
+                <aside>
+                    <p>Zone de gauche<br />ASIDE</p>
+                </aside>
+
+                <section class="middle">
+                    <p>Zone du milieu<br />MIDDLE</p>
+                </section>
+
+                <aside>
+                    <p>Zone de droite<br />ASIDE</p>
+                </aside>
+
+                <div class="clear"></div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Zoning 3</h3>
+
+            <div id="zoning3">
+
+                <section>
+                    <p>Zone de gauche<br />LEFT</p>
+                </section>
+
+                <section>
+                    <p>Zone de droite<br />RIGHT</p>
+                </section>
+
+                <footer>
+                    <p>Zone du bas<br />FOOTER</p>
+                </footer>
+
+                <div class="clear"></div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Zoning 4</h3>
+
+            <div id="zoning4">
+                <header>
+                    <p>HEADER</p>
+                </header>
+
+                <nav>
+                    <p>NAV</p>
+                </nav>
+
+                <section>
+                    <p>SECTION</p>
+                </section>
+
+                <footer>
+                    <p>FOOTER</p>
+                </footer>
+
+                <div class="clear"></div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Zoning 5</h3>
+
+            <div id="zoning5">
+                <header>
+                    <p>HEADER</p>
+                </header>
+
+                <nav>
+                    <p>NAV</p>
+                </nav>
+
+                <section>
+                    <div class="z1">
+                        <p>Zone 1</p>
+                    </div>
+
+                    <div class="z2">
+                        <p>Zone 2</p>
+                    </div>
+
+                    <div class="z3">
+                        <p>Zone 3</p>
+                    </div>
+
+                    <div class="z4">
+                        <p>Zone 4</p>
+                    </div>
+
+                    <div class="clear"></div>
+                </section>
+
+            </div>
+
+            <section>
+                <h3>Zoning 6</h3>
+
+                <div id="zoning6">
+                    <header>
+                        <div class="haut1">haut 1</div>
+                        <div class="haut2">haut 2</div>
+                        <div class="haut3">haut 3</div>
+                        <div class="clear"></div>
+                    </header>
+
+                    <nav>
+                        Menu
+                    </nav>
+
+                    <aside>
+                        Zone de gauche
+                    </aside>
+
+                    <section>
+                        <div class="a">A</div>
+                        <div class="b">B</div>
+                        <div class="clear"></div>
+                    </section>
+
+                    <section class="slideshow">
+                        SlideShow
+                    </section>
+
+                    <section>
+                        <div class="c">C</div>
+                        <div class="d">D</div>
+                        <div class="e">E</div>
+                        <div class="f">F</div>
+                        <div class="clear"></div>
+                    </section>
+
+                    <footer class="clear">
+                        BAS
+                    </footer>
+
+                    <div class="clear"></div>
+                </div>
+            </section>
+
+
+    </main>
+
+    <footer>
+        <small>
+            &copy; 2020 Le PoleS
+        </small>
+    </footer>
+</body>
+
+</html>
